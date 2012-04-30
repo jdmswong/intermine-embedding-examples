@@ -37,17 +37,16 @@
     <script type="text/javascript">
     (function() {
         /* InterMine root URL. */
-        var mine = "http://beta.flymine.org/beta";
+        var mine = "http://test.metabolicmine.org/test";
 
         /* New Widgets client. */
         var widgets = new Widgets(mine + "/service/");
 
-        
+        /* Give us Pathway Enrichment Widget. */
+        widgets.enrichment('pathway_enrichment', 'demo-genes', '#pathway-widget');
 
         /* Give us Publicaton Enrichment Widget. */
-        widgets.enrichment('go_enrichment_for_gene', 'example', '#pub-widget');
-        
-
+        widgets.enrichment('publication_enrichment', 'demo-genes', '#pub-widget');
 
     })();
     </script>
